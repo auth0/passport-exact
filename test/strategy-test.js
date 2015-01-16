@@ -1,28 +1,28 @@
 var vows = require('vows');
 var assert = require('assert');
 var util = require('util');
-var uberStrategy = require('passport-uber/strategy');
+var Strategy = require('passport-exact/strategy');
 
 
-vows.describe('uberStrategy').addBatch({
+vows.describe('exactStrategy').addBatch({
   
   'strategy': {
     topic: function() {
-      return new uberStrategy({
+      return new Strategy({
         clientID: 'ABC123',
         clientSecret: 'secret'
       },
       function() {});
     },
     
-    'should be named uber': function (strategy) {
-      assert.equal(strategy.name, 'uber');
+    'should be named exact': function (strategy) {
+      assert.equal(strategy.name, 'exact');
     },
   },
   
   'strategy when loading user profile': {
     topic: function() {
-      var strategy = new uberStrategy({
+      var strategy = new Strategy({
         clientID: 'ABC123',
         clientSecret: 'secret'
       },
@@ -61,9 +61,9 @@ vows.describe('uberStrategy').addBatch({
         assert.isNull(err);
       },
       'should load profile' : function(err, profile) {
-        assert.equal(profile.provider, 'uber');
+        assert.equal(profile.provider, 'exact');
         assert.equal(profile.id, '123');
-        assert.equal(profile.displayName, 'Uber Developer');
+        assert.equal(profile.displayName, 'Exact Developer');
       },
       'should set raw property' : function(err, profile) {
         assert.isString(profile._raw);
@@ -76,7 +76,7 @@ vows.describe('uberStrategy').addBatch({
   
   'strategy when loading user profile and encountering an error': {
     topic: function() {
-      var strategy = new uberStrategy({
+      var strategy = new Strategy({
         clientID: 'ABC123',
         clientSecret: 'secret'
       },
