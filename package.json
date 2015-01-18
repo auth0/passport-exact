@@ -32,7 +32,7 @@
   "dependencies": {
     "pkginfo": "0.2.x",
     "passport-oauth": "~0.1.2",
-    "xml2json": "*"
+    "xml2js": "*"
   },
   "devDependencies": {
     "vows": "0.6.x"
