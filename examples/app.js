@@ -8,8 +8,8 @@ var express = require('express')
   , static = require('serve-static') 
   , Strategy = require('../lib/passport-exact').Strategy;
 
-var CLIENT_ID = "91c0381c-....5612b96a8e11";
-var CLIENT_SECRET = "mZS....o4it";
+var CLIENT_ID = "91c0381c...2b96a8e11";
+var CLIENT_SECRET = "mZ...it";
 
 console.log(Strategy);
 
