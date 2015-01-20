@@ -20,7 +20,7 @@
   "author": {
     "name": "Eugenio Pace",
     "email": "eugeniop@auth0.com",
-    "url": "http://www.auth0.net/"
+    "url": "http://www.auth0.com/"
   },
   "licenses": [
     {
@@ -35,7 +35,7 @@
     "xml2js": "*"
   },
   "devDependencies": {
-    "vows": "0.6.x"
+    "vows": "0.x"
   },
   "scripts": {
     "test": "NODE_PATH=lib node_modules/.bin/vows test/*-test.js"
@@ -43,6 +43,5 @@
   "engines": {
     "node": ">= 0.4.0"
   },
-  "readmeFilename": "README.md",
-  "_id": "passport-exact@0.1.2"
+  "readmeFilename": "README.md"
 }
