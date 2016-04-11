@@ -31,8 +31,7 @@
   "main": "./lib/passport-exact",
   "dependencies": {
     "pkginfo": "0.2.x",
-    "passport-oauth": "~0.1.2",
-    "xml2js": "*"
+    "passport-oauth": "~0.1.2"
   },
   "devDependencies": {
     "vows": "0.x"
