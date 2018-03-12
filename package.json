@@ -12,10 +12,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/eugeniop/passport-exact.git"
+    "url": "git://github.com/auth0/passport-exact.git"
   },
   "bugs": {
-    "url": "http://github.com/eugeniop/passport-exact/issues"
+    "url": "http://github.com/auth0/passport-exact/issues"
   },
   "author": {
     "name": "Eugenio Pace",
